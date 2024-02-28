@@ -1,0 +1,76 @@
+// Using BEM & SCSS
+.home-slide {
+    height: 100vh;
+    background-position: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &-1 {
+        background-image: url('../../images/spacex-1.jpg');
+    }
+
+    &-2 {
+        background-image: url('../../images/spacex-2.jpg');
+    }
+
+    &-3 {
+        background-image: url('../../images/spacex-3.jpg');
+    }
+
+    &-4 {
+        background-image: url('../../images/spacex-4.jpg');
+    }
+
+    &-5 {
+        background-image: url('../../images/spacex-5.jpg');
+    }
+
+    &__overlay {
+        background: rgba($color: #000000, $alpha: 0.1);
+        height: 100%;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding-left: 200px;
+        padding-bottom: 70px;
+    }
+
+    &__content {
+        max-width: 420px;
+        text-align: left;
+    }
+
+
+    &__subtitle, &__title {
+        color: white;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        font-family: 'Montserrat';
+        font-weight: 500;
+    }
+
+    &__title {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 48px;
+    }
+
+    &__action {
+        display: block;
+        margin-top: 30px;
+        border: 2px solid white;
+        padding: 15px;  
+        max-width: 160px;
+        min-width: max-content;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        transition: background-color 0.5s ease;
+
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+}
